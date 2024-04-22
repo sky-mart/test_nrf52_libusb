@@ -46,18 +46,9 @@ extern "C" {
 #define CFG_TUSB_MEM_SECTION
 #define CFG_TUSB_MEM_ALIGN __attribute__((aligned(4)))
 
-#ifdef USE_TINYUSB
-// Enable device stack
 #define CFG_TUD_ENABLED 1
-
-// Enable host stack with MAX3421E (host shield)
-#define CFG_TUH_ENABLED 1
 #define CFG_TUH_MAX3421 1
-
-#else
-#define CFG_TUD_ENABLED 0
 #define CFG_TUH_ENABLED 0
-#endif
 
 //--------------------------------------------------------------------
 // DEVICE CONFIGURATION
