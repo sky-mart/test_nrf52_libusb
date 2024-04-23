@@ -20,9 +20,6 @@
     "homepage": "https://www.tinyusb.org/",
     "frameworks": "*",
     "platforms": "*",
-    "dependencies": {
-      "external-repo": "https://github.com/NordicSemiconductor/nrfx.git#v3.4.0"
-    },
     "build": {
       "flags": [
         "-DNRF52840_XXAA",
