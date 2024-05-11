@@ -1,12 +1,12 @@
 #include <Arduino.h>
-#include <tusb.h>
+// #include <tusb.h>
 //#include <USBSerial.h>
-//#include <Adafruit_TinyUSB.h> // for Serial
+#include <Adafruit_TinyUSB.h> // for Serial
 
 void setup() {
     // initialize digital pin LED_BUILTIN as an output.
     pinMode(LED_BUILTIN, OUTPUT);
-    tusb_init();
+    // tusb_init();
     Serial.begin(9600);
 }
 
